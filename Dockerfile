@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 
 COPY server/package.json .
 RUN npm install
-COPY server/ .
+COPY server .
 
 RUN npm install && npm install nodemon --save-dev
 
